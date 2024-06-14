@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registerpage</title>
+    <link rel="icon" href="\images\image.jpg" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="\images\image.jpg">
+    <style>
+        body {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           height: 200vh;
+           margin: 0;
+           width: 100%;
+           font-family: 'Arial', sans-serif;
+       }
+       form {
+           text-align: center;
+           width: 80%; 
+           max-width: 400px; 
+           margin: 0 auto; 
+       }
+       input[type="submit"] {
+            width: 100%; 
+            box-sizing: border-box;
+            padding: 10px; 
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            background-color: black;
+            color: white;
+        }
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        label {
+      display: inline-block;
+      margin-bottom: 10px;
+       }
+       html, body {
+    overflow: auto;
+    }
+        input[type="password"],
+        input[type="date"],
+        input[type="tel"],
+        input[type="textarea"],
+        input[type="textarea"],
+        input[type="email"] {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        select {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+   </style>
+</head>
+<body>
+    <form action="/Register"method="POST">
+    <h2>Create your personal account</h2>
+    <p>
+         You are about to create your account.This will allow us to offer you a
+         personalized and tailored experience online,provide you with products,
+         servicesand information you request from us ,communicate with you,and 
+         give you  access to exclusive services and benefits resrved for registered 
+         members to the HOTEL WANDERS Group customer database.
+    </p>
+    <label for="title"></label>
+    <select id="title" name="title">
+        <option abled selected>Select Title</option>
+        <option>Mr</option>
+        <option>Mrs</option>
+        <option>Ms</option>
+        <option>Not prefer to say</option>
+    </select>
+    </br>
+    </br>
+    <label for="firstname"></label>
+    <input type="textarea"id="firstname"name="firstname"placeholder="First Name">
+    <label for="lastname"></label>
+    <input type="textarea"id="lastname"name="lastname"placeholder="Last Name">
+    </br>
+    </br>
+    <label for="mobile"></label>
+    <select id="countryCode"name="countryCode">
+        <option abled selected>Country Code</option>
+        <option>91</option>
+        <option>92</option>
+        <option>93</option>
+        <option>94</option>
+        <option>95</option>
+        <option>96</option>
+        <option>101</option>
+        <option>97</option>
+        <option>98</option>
+        <option>99</option>
+        <option>100</option>
+        <option>102</option>
+      </select>
+      <input type="tel"id="phone"name="phone"placeholder="phone:99876####">
+    </br>
+</br>
+    <label for="password"></label>
+    <input type="password"id="password"name="password"placeholder="Password*">
+    </br>
+</br>
+<label for="email"></label>
+<input type="email"id="email"name="email"placeholder="Email Address">
+</br>
+    <div class="checkbox-container">
+    <label for="agreement">
+    <input type="checkbox"id="agreement"name="agreement">
+    </label>
+    <p>
+    I agree to receive (by email and other forms of electronic communication)
+    commercial communication,including marketing and promotional messages,news
+    letters,advertising and catalogues concerning HOTEL WANDERS. 
+    </p>
+    </div>
+    <div class="checkbox-container">
+    <label for="register"></label>
+    <input type="checkbox"id="register"name="register">
+    <p>
+        I agree to be contacted by phone or receive text message Of Hotel Wanders.
+    </p>
+    </div>
+    <p>
+        By clicking on 'Register',you confirm that you heve read and understood our 
+        <u>Privacy Statement</u> ,and  you want to register and accept our terms and services.
+    </p>
+    <label for="Button"></label>
+    <input type="submit"Value="Register"id="Button">
+
+    </form>  
+</body>
+</html>

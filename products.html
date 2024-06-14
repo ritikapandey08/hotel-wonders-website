@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our sevices</title>
+    <link rel="stylesheet" href="\css\products.css">
+    <link rel="icon" href="hotel logo.jpg" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="hotel logo.jpg">
+
+</head>
+<body>
+
+    <header>
+        <h1>Our Services</h1>
+        <nav>
+            <ul>
+                <li><a href="\index.html">Home</a></li>
+                <li><a href="\about.html">About</a></li>
+                <li><a href="\contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="services">
+            <img src="FACI.jpg" alt="Swimming">
+            <div class="service-info">
+                <h2>Swimming</h2>
+                <p>Get swimming pools too here...</p>
+                <button class="view-btn" onclick="toggleDropdown(this)">View</button>
+                <div class="dropdown-content">
+                    <ul>
+                        <button>Swimming custome</button>
+                        <button>swimming glasses</button>
+                        <button>swimming cap</button>
+                        <button>swimming tube</button>
+                        <!-- Add more items as needed -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="Services">
+            <img src="party space.avif" alt="party">
+            <div class="services-info">
+                <h2>party</h2>
+                <p>Get a party space here...</p>
+                <button class="view-btn" onclick="toggleDropdown(this)">View</button>
+                <div class="dropdown-content">
+                    <ul>
+                        <button>clubs</button>
+                        <button>birthday party celebration</button>
+                        <button>dancing</button>
+                        
+                        <!-- Add more items as needed -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="Services">
+            <img src="kids-play-zone.jpg" alt="Play area">
+            <div class="Service-info">
+                <h2>Playing</h2>
+                <p>Discover fun for your kids here...</p>
+                <button class="view-btn" onclick="toggleDropdown(this)">View</button>
+                <div class="dropdown-content">
+                    <ul>
+                        <button>rides</button>
+                        <button>water toys</button>
+                        <button>clay toys</button>
+                    
+                        <!-- Add more items as needed -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+       
+        <button class="more-button" onclick="redirectToLoginPage()">More &gt;&gt;&gt;</button>
+        
+    </main>
+  
+
+    <footer>
+        <p>&copy; 2024 Humble Home. All rights reserved.</p>
+    </footer>
+    <script>
+        // JavaScript function to toggle dropdown
+        function toggleDropdown(button) {
+            let dropdownContent = button.nextElementSibling;
+            dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
+        }
+    </script>
+     <script>
+        // JavaScript function to redirect to login page
+        function redirectToLoginPage() {
+            window.location.href = "\loginpage.html"; // Replace "login.html" with the actual path to your login page
+        }
+    </script>
+    <script>
+        const towelButton = document.getElementById('Towel');
+       // const itemsList = document.getElementById('itemsList');
+
+        towelButton.addEventListener('click',  () => {
+            window.location.href = '/towel.html'; 
+         
+        });
+        
+ </script> 
+     
+</body>
+</html>
